@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Comic Sans MS;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: url(toto2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    justify-content: space-between;
+    position:absolute;
+
+}
+.navbar ul{
+    position: absolute;
+    top: 20px;
+    right: -250px;
+}
+.logo{
+    width: 20%;
+    cursor: pointer;
+    position: absolute;
+    left: 0;
+}
+.logo a:hover{
+    cursor: url("pointer-removebg-preview.png"), auto;
+}
+.clouds{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: absolute;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 1vh;
+    position: relative;
+    left: -175px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: #000000;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 1s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.navbar a:hover{
+    cursor: url("pointer-removebg-preview.png"), auto;
+}
+.bio{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-70%);
+    text-align: center;
+    color:#000000;
+}
+.bio h1{
+    font-size: 3vh;
+    margin-top: 80px;
+}
+.bio p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.bio p li{
+    text-align: center;
+    display: inline;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid #000000;
+    color:black;
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: black;
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+    z-index: -1;
+    transition: 1s ease-in-out;
+    
+}
+button:hover span{
+    width: 100%;
+    color: white;
+}
+button:hover{
+    border: none;
+    color: white;
+    cursor: url("pointer-removebg-preview.png"), auto;
+
+}
+.misc ul{
+    position: absolute;
+    bottom: 0;
+}
+.misc li{
+    display: inline;
+    padding: 0px;
+}
+.misc ul li:after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: #000000;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.misc a:hover{
+    cursor: url("pointer-removebg-preview.png"), auto;
+
+}
+.misc a:link {
+    text-decoration: none;
+}
+body{
+    cursor: url("cursor.png"), auto;
+}
+
+body::after{
+    pointer-events: none;
+}
+.advert{
+    position:absolute;
+    bottom: 10px;
+    left: 125px;
+    pointer-events: none;
+}
+.advert:hover{
+    cursor: url("pointer-removebg-preview.png"), auto;
+}
+.cat{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+}
+.cat:hover{
+    pointer-events: none;
+}
